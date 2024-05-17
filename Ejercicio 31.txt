@@ -1,0 +1,18 @@
+#include <vector>
+using namespace std;
+
+bool betterThanAverage(vector<int> classpoints, int yourpoints) {
+  
+  int sum = 0;
+  for(int i=0; i < classpoints.size() ; i++){
+    sum += classpoints[i];
+  }
+  
+  int prom = sum / classpoints.size();  
+  
+  if(yourpoints > prom){
+    return true;
+   } else{
+    return false;
+ }
+}
