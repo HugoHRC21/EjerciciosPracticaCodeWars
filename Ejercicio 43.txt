@@ -1,0 +1,12 @@
+using namespace std;
+
+
+bool hero(int bullets, int dragons) {
+  
+  int cal = dragons*2;
+  if (bullets >= cal){
+    return true;
+  } else {
+    return false;
+  }
+}
