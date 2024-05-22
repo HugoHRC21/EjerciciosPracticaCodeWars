@@ -1,0 +1,13 @@
+#include <vector>
+using namespace std;
+
+vector<int> countBy(int x,int n){
+  
+   vector<int> hey;
+   for (int i = 1; i <= n; i++)
+   {
+     hey.push_back(i* x);
+   }
+  
+  return hey;
+}
