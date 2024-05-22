@@ -1,0 +1,12 @@
+using namespace std;
+
+bool zero_fuel(uint32_t kilometros, uint32_t millas, uint32_t galon)
+{
+ int DistaGalon = galon * millas;
+ 
+ if(DistaGalon >= kilometros){
+   return true;
+ } else {
+   return false;
+ }
+}
