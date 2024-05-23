@@ -1,9 +1,0 @@
-#include <vector>
-
-std::vector<int> digitize(unsigned long n) {
-    std::vector<int> v;
-    std::string s = std::to_string(n);
-    std::reverse(s.begin(), s.end());
-    for (int i = 0; i < s.length(); i++) v.push_back(s[i]-'0');
-    return v;
-}

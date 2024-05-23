@@ -1,9 +1,0 @@
-int centuryFromYear(int year) 
-{
-  int cal = year / 100;
-  if(year % 100 == 0){
-    return cal;
-  }  else {
-    return cal + 1;
-  }
-}

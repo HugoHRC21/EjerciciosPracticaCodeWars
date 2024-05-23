@@ -1,8 +1,0 @@
-int paperwork(int n, int m){
-    if(n > 0 and m >= 0){
-      int hey = n*m;
-      return hey;
-    } else {
-        return 0;
-    }
- }

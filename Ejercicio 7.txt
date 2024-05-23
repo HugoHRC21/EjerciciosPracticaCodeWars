@@ -1,9 +1,0 @@
-#include <string>
-#include <iostream>
-
-using namespace std;
-
-string number_to_string(int num) {
-  string numberString = to_string(num);
-  return numberString;
-}
