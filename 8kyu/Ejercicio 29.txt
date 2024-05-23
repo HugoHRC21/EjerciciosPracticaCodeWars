@@ -1,0 +1,12 @@
+#include <vector>
+using namespace std;
+  
+int sum(vector<int> nums) {
+  vector<int> che = nums;
+  int jj = 0;
+  
+  for (int i=0; i < che.size(); i++){
+    jj += che[i];
+  }
+  return jj;
+}

@@ -1,0 +1,10 @@
+#include <string>
+
+std::string abbrevName(std::string khe)
+{
+  std::string kha;
+  kha.push_back(toupper(khe[0]));
+  kha.push_back('.');
+  kha.push_back(toupper(khe[khe.find(' ') + 1] ));
+  return kha; 
+}

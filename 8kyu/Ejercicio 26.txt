@@ -1,0 +1,12 @@
+using namespace std;
+
+vector<int> maps(const vector<int> & values) {
+  
+  vector<int> hr = values;
+  
+  for(int i=0; i < hr.size(); i++){
+    hr[i] = values[i] * 2;
+  }  
+  return hr;
+}
+

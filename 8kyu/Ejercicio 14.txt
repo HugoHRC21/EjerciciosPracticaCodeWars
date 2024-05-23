@@ -1,0 +1,13 @@
+#include <vector>
+
+using namespace std; 
+
+int findSmallest(vector <int> list)
+{
+  int hey=list.size();
+  int hey2=list[0];
+  for(int i=1; i<hey; i++)
+    if(hey2>list[i]) 
+        hey2=list[i];
+  return hey2;
+}
