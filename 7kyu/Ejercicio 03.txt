@@ -1,0 +1,20 @@
+#include <string>
+
+using namespace std;
+
+int square_digits(int num) {
+  string hey = to_string(num);
+  
+  string new_num;
+  for (int i = 0; i < hey.length(); i++) {
+    char c = hey[i];
+    int n = stoi(string{c});
+    string aja = to_string(n * n);
+    
+    for (int j = 0; j < aja.length(); j++) {
+      new_num.push_back(aja[j]);
+    }
+  }
+  
+  return stoi(new_num);
+}
