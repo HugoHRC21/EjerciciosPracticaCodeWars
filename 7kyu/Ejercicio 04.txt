@@ -1,0 +1,12 @@
+using namespace std;
+
+string get_middle(string input) 
+{
+  int i = input.length();
+  
+  if (i%2 == 0){
+    return input.substr((i/2)-1, 2);
+  } else {
+  return input.substr(i/2, 1);
+    }
+}
