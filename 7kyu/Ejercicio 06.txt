@@ -1,0 +1,24 @@
+using namespace std;
+
+bool XO(const string& str)
+{
+  int o =0;
+  int x =0;
+  for (int i = 0; i < str.length(); i++){
+    if (str[i] == 'o' || str[i] == 'O'){
+      o ++;
+    } 
+    if (str[i] == 'x' || str[i] == 'X'){
+      x ++;
+    }
+  }
+  
+  
+  if (o == x){
+    return true;
+  } else if (o == 0 && x == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
