@@ -1,0 +1,22 @@
+#include <string>
+using namespace std;
+
+int find_short(string str)
+{
+  int min = numeric_limits<int>::max();
+  int aux = 0;
+  
+  for(auto c : str){
+   
+    if (c == ' ') 
+    { if (aux < min) min = aux;
+      aux = 0;
+      continue;
+    }
+    aux ++;    
+  }
+  if (aux !=0 and aux < min){
+    min = aux;
+  }
+  return min;
+}
