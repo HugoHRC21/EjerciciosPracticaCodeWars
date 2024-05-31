@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+bool is_square(int n)
+{
+  int calculo = sqrt(n);
+  int comprob = calculo * calculo;
+  if (comprob == n){
+    return true;
+      }else{
+    return false;
+  }
+}
