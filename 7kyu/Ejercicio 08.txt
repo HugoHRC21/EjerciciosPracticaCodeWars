@@ -1,0 +1,20 @@
+#include <string>
+#include <map>
+
+std::string DNAStrand(const std::string& dna)
+{
+  std::map<char, char> cambiodna;
+  
+  cambiodna['A'] = 'T';
+  cambiodna['T'] = 'A';
+  cambiodna['C'] = 'G';
+  cambiodna['G'] = 'C';
+  
+  std::string s;
+  
+  for (auto c : dna){
+    s.push_back(cambiodna[c]);     
+  }
+  
+   return s; 
+} 
