@@ -1,0 +1,12 @@
+#include <cmath>
+using namespace std;
+
+long int findNextSquare(long int sq) {
+    double sqrt_sq = sqrt(sq);
+    
+    if (sqrt_sq == static_cast<int>(sqrt_sq)) {
+        return (sqrt_sq + 1) * (sqrt_sq + 1);
+    } else {
+        return -1;
+    }
+}
