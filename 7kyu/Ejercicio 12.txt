@@ -1,0 +1,10 @@
+namespace Triangle
+{
+  bool isTriangle(int a, int b, int c)
+  {
+    if (a+b > c and b+c > a and c+a > b){
+      return true;
+    } else {return false;}
+   
+  }
+}
