@@ -1,0 +1,24 @@
+using namespace std;
+
+string reverse_words(string str)
+{  
+ string str2, extra;
+  
+ for(char c: str){
+   if (c == ' '){
+     reverse(str2.begin(), str2.end());
+     extra += str2 + " ";
+     str2 = "";
+     continue;
+   }
+   str2 += c;
+ }
+
+  if (str2.size() != 0){
+    reverse(str2.begin(), str2.end());
+    extra += str2;
+  }
+ 
+  
+  return extra;
+} 
