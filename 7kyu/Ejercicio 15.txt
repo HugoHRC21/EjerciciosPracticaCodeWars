@@ -1,0 +1,32 @@
+# include string
+# include cstdlib
+#include limits
+
+
+using namespace std;
+
+string highAndLow(const string& numbers){ 
+  int max{numeric_limitsintmin()}, min{numeric_limitsintmax()};
+  string aja;
+  
+  for(char c numbers){
+   if (c == ' ') {
+     int pepe = stoi(aja);
+    if (pepe  max) max = pepe;
+    if (pepe = min) min = pepe;  
+   
+    aja = ;
+    continue;
+   }
+   
+    aja += c;
+ } 
+  
+  if (aja.size()) {
+    int pepe = stoi(aja);
+    if (pepe  max) max = pepe;
+    if (pepe = min) min = pepe;
+  }
+  
+  return to_string(max) + ' ' + to_string(min);
+}
