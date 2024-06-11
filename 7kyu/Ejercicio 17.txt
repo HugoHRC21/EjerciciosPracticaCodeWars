@@ -1,0 +1,21 @@
+#include <cinttypes>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+uint64_t descendingOrder(uint64_t a) {
+  vector<int> digitos;
+  while(a > 0) {
+    digitos.push_back(a % 10);
+    a /= 10;
+  }
+
+  sort(digitos.begin(), digitos.end(), greater<int>());
+
+  uint64_t resultado = 0;
+  for(int d : digitos) {
+    resultado = resultado * 10 + d;
+  }
+
+  return resultado;
+}
