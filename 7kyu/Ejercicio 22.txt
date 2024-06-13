@@ -1,0 +1,12 @@
+long long rowSumOddNumbers(unsigned n){
+  int all = 0, ans = 0;
+  for(int i = 1 ; i <= n ; i ++){
+    all += i;
+  }
+  int start = all * 2 - 1;
+  for(int j = 0 ; j < n ; j ++){
+    ans += start;
+    start -= 2;
+  }
+  return ans;
+}
