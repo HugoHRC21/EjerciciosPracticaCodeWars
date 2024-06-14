@@ -1,0 +1,17 @@
+unsigned int number(const std::vector<std::pair<int, int>>& busStops){
+int paentro = 0;
+int pafuera = 0;
+int finalBus = 0; 
+
+  for(int i = 0; i < busStops.size(); i++){
+    paentro += busStops[i].first;
+  }
+  
+  for(int i = 0; i < busStops.size(); i++){
+    pafuera += busStops[i].second;
+  }
+  
+  finalBus = paentro - pafuera;
+  
+  return finalBus;
+}
