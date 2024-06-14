@@ -1,0 +1,27 @@
+#include <cstdint>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+string add_binary(uint64_t a, uint64_t b) {
+    
+  int pepa = a + b;
+  vector<int> epale;
+ 
+  while (pepa != 0){
+    epale.push_back(pepa % 2);
+    pepa /= 2;
+  }
+  
+
+  string este;
+  for(int i = 0; i < epale.size(); i++){
+    este.push_back(static_cast<char>(epale[i] + '0'));
+  }
+  
+  reverse(este.begin(), este.end());
+  
+   return este;
+
+}
