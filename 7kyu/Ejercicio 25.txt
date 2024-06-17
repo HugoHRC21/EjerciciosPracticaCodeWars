@@ -1,0 +1,12 @@
+using namespace std;
+
+int dontGiveMeFive(int start, int end)
+{
+    int epale = 0;
+    for (int i = start +1 ; i <= end + 1; i++) {
+        if (i % 5 != 0) {
+            epale++;
+        }
+    }
+    return epale +1 ;
+}
