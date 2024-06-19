@@ -1,0 +1,14 @@
+#include <vector>
+using namespace std;
+
+vector<unsigned int> removeSmallest(vector<unsigned int> n) {
+  auto m = min_element(begin(n),end(n));
+  auto i = n.begin();
+  vector<unsigned int> epale;  
+  while(i != n.end()){
+    if(i != m)
+      epale.push_back(*i);
+    i++;
+  }
+  return epale;
+}
