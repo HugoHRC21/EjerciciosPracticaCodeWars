@@ -1,0 +1,26 @@
+using namespace std;
+
+bool containsFive(int num) 
+{
+    while(num != 0 )
+    {
+      if (num % 10 == 5 ) return true;
+      
+      num /= 10;
+    }
+  
+  return false;
+}
+
+int dontGiveMeFive(int start, int end)
+{
+    int count = 0;
+    for (int i = start; i <= end; i++) {
+      if (containsFive(abs(i)))
+        continue;  
+      
+      count++;
+    }
+  
+    return count;
+}
