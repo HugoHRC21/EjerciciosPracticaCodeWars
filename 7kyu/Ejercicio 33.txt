@@ -1,0 +1,11 @@
+using namespace std;
+
+unsigned halving_sum(unsigned n) {
+  int aux = n;
+  unsigned suma = 0;
+  while (aux != 0){
+    suma += aux;
+    aux /= 2;
+  }
+  return suma;
+}
