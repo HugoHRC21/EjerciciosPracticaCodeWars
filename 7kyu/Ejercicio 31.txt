@@ -1,0 +1,11 @@
+using namespace std;
+
+unsigned int cookingTime(unsigned int eggs) {
+  if(eggs == 0) return 0;
+  if(eggs % 8 == 0){
+    return ((eggs/8)) * 5;
+  }else {
+    return ((eggs/8) + 1) * 5;
+}
+}
+
