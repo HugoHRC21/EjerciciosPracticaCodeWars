@@ -1,0 +1,15 @@
+using namespace std;
+
+vector<double> averages(vector<int> numbers)
+{
+      if (numbers.empty() || numbers.size() == 1) {
+        return {};
+    }
+  vector<double> result(numbers.size()-1);
+  
+  for (size_t i = 0; i < numbers.size()-1; i++){
+    result[i] = (static_cast <double> (numbers[i]) + numbers[i+1])/2.0;
+  }
+ 
+  return result;
+}
