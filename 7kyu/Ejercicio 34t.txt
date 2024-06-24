@@ -1,0 +1,19 @@
+#include <vector>
+using namespace std;
+
+char add_letters(const vector<char>& letters) {
+    if (letters.empty()) {
+        return 'z';
+    }
+
+    int sum = 0;
+    for (char letter : letters) {
+        sum += letter - 'a' + 1;
+    }
+
+    while (sum > 26) {
+        sum -= 26;
+    }
+
+    return static_cast<char>(sum + 'a' - 1);
+}
