@@ -1,0 +1,16 @@
+#include <vector>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int sum_even_numbers(const vector<double> seq) {
+  double par = 0;
+  for (size_t i = 0; i < seq.size(); i++){
+    if (fmod(seq[i], 2.0) == 0){
+      par += seq[i];
+    } 
+  }
+  
+  return par;
+}
