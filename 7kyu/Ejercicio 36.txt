@@ -1,0 +1,21 @@
+  using namespace std;
+
+  vector<int> digits(int n){
+
+    vector<int> aux,epale;
+
+    while(n>0){ 
+      aux.push_back(n%10);
+      n /= 10;
+    }
+
+    reverse(aux.begin(),aux.end());
+
+    for(int i = 0; i < aux.size(); i++){
+      for(int j = i+1; j < aux.size(); j++){
+        epale.push_back(aux[i] + aux[j]);
+      }
+    }
+
+    return epale;
+  }
