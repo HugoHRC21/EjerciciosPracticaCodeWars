@@ -1,0 +1,17 @@
+#include <vector>
+
+long yahtzee_upper(std::vector<int> arr) {
+  long aja=0, mayor = 0;
+  
+  for (long i = 0; i<= arr.size(); i++){
+    aja = arr[i];
+    
+    for (long j = i+1;j<=arr.size(); j++) {
+      
+      if (arr[i] == arr[j]) { aja+=arr[i]; }
+      if (aja > mayor) { mayor=aja; }
+      
+    }
+  }
+  return mayor;
+}
