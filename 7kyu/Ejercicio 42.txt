@@ -1,0 +1,13 @@
+using namespace std;
+
+string replaceAll(string str) {
+  string resultado;
+  for(int i = 0; i < str.length(); i++){
+    if(str[i] != '#'){
+      resultado += str[i];
+    } else break;
+  }
+  
+  
+  return resultado;  
+}
