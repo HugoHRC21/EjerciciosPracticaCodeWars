@@ -1,0 +1,12 @@
+#include <algorithm>
+#include <tuple>
+#include <cmath>
+using namespace std;
+
+tuple<int, int, int> racePodium(int blocks) 
+{
+  const int first  = static_cast<int>(round((blocks + 1.0) / 3.0 + 1.0));
+  const int second = min(first - 1, blocks - first - 1);
+  const int third  = blocks - first - second;
+  return make_tuple(second, first, third);
+}
