@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+unsigned int nextPal(const unsigned int val) {
+  
+  int aja = val;
+  string epa;
+  
+  
+  while(true){
+    aja++;
+    epa = to_string(aja);
+    string reverser = string(epa.rbegin(),epa.rend());
+    if( epa == reverser) break;
+  }  
+  return aja;
+}
