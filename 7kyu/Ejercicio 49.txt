@@ -1,0 +1,20 @@
+#include <vector>
+#include <map>
+using namespace std;
+
+vector<int> remove_values(vector<int> integers, vector<int> values) {
+
+ map<int, bool> epa;
+ vector<int> ajole;
+  
+  for(auto c : values){
+    epa[c] = true;
+  }
+  
+  for(int i =0; i < integers.size() ; i++){
+   if(not epa [integers[i]]){
+     ajole.push_back(integers[i]);
+   }
+  }
+  return ajole;
+}
