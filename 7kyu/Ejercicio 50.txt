@@ -16,3 +16,5 @@ unsigned int nextPal(const unsigned int val) {
   }  
   return aja;
 }
+
+..thaybs37.83q
